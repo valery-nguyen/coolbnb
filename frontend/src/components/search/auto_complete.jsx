@@ -117,12 +117,14 @@ class AutoComplete extends React.Component {
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
               <form onSubmit={(e) => {e.preventDefault();}}>
+                <span className="search-icon">&#x1f50d;</span>
                 <input id="header-search-input"
                   {...getInputProps({
-                    placeholder: 'Search Spots ... (try San Francisco)',
+                    placeholder: `Search | San Francisco or Pier 39`,
                     className: 'location-search-input',
                   })}
                 />
+                
             </form>
             <div className="autocomplete-dropdown-container">
               {loading && <div>Loading...</div>}

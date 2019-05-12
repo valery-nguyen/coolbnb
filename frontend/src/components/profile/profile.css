@@ -1,11 +1,17 @@
 .profile {
-  margin-top: 87px;
+  margin-top: 66px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-
+  background-image: url('no_trip.png');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  min-height: calc(100vh - 108px);
+  padding-bottom: 250px;
+  box-sizing: border-box;
 }
 
 .profile h1 {
@@ -14,7 +20,16 @@
 }
 
 .profile h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile h3 {
+  font-size: 18px;
+  text-align: center;
 }
 
 .profile ul {
@@ -25,17 +40,18 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-
 }
 
 .profile li {
-  width: 400px;
+  width: 300px;
+  height: 450px;
   margin: 10px;
-    border: 1px solid white;
+  border: 1px solid white;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 6px;
   padding-bottom: 20px;
+  background-color: white;
 }
 
 .profile li button {
@@ -48,7 +64,6 @@
 
 .profile li button:hover {
   cursor: pointer;
-
 }
 
 .profile-booking-delete-button-div {
@@ -62,9 +77,9 @@
   margin: auto;
   margin-bottom: 15px;
   width:100%;
-  height:300px;
+  height:225px;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .profile-booking-text {
@@ -72,7 +87,12 @@
 }
 
 .profile-booking-text h5 {
-  font-size: 20px;
+  font-size: 17px;
   margin: 10px 0;
   font-weight: bold;
+}
+
+.profile-booking-text p {
+  font-size: 13px;
+  line-height: 1.5;
 }

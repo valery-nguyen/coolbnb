@@ -1,3 +1,5 @@
+import { colors } from "material-ui/styles";
+
 const google = window.google;
 
 export default class MarkerManager {
@@ -39,10 +41,10 @@ export default class MarkerManager {
       '<div id="content">' +
       '<div id="siteNotice">' +
       "</div >" +
-      `<img style="max-height: 120px; max-width: 200px;" alt="" src=${
-        spot.images[0].img_url
+      `<img style="max-height: 120px; max-width: 200px; margin-bottom: 10px;" alt="" src=${
+        spot.images[1].img_url
       }>` +
-      `<h1 id="firstHeading" class="firstHeading" style="max-width: 200px; word-break: break-word;"><b>${
+      `<h1 id="firstHeading" class="firstHeading" style="max-width: 200px; word-break: break-word; margin-bottom: 5px;"><b>${
         spot.name
       }</b></h1>` +
       '<div id="bodyContent">' +
@@ -58,7 +60,8 @@ export default class MarkerManager {
       label: {
         text: `$${spot.price}`,
         fontSize: "9px",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        color: 'white'
       },
       spotId: spot._id
     });

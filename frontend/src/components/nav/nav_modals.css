@@ -1,3 +1,6 @@
+.close-button-modal {
+  display: block;
+}
 .guest-login-container {
   display: flex;
   justify-content: center;
@@ -10,10 +13,9 @@
   font-weight: 900;
   height: 48px;
   width: 450px;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
 }
-
 
 .signup-modal {
   display: none;
@@ -48,7 +50,8 @@
   background-color: white;
   position: fixed;
   width: 500px;
-  min-height: 500px;
+  height: auto;
+  padding: 35px 30px;
   top: 50%;
   left: 50%;
   margin-left: -250px;
@@ -56,17 +59,20 @@
   z-index: 2;
 }
 
-.login-form-container form {
-  height: 500px;
-  width: 500px;
-}
-
 .login-form {
-  height: 500px;
+  height: auto;
   width: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.login-form-container {
+  height: auto;
+}
+
+.login-form-container form{
+  height: auto;
 }
 
 .session-modal-submit-button {
@@ -81,11 +87,12 @@
 
 .modal-input-field {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border: 1px solid grey;
+  border: 1px solid lightgray;
   padding: 10px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
   width: 90%;
+  font-size: 12px;
 }
 
 .close-modal-button {
@@ -104,11 +111,12 @@
 }
 
 .session-modal-header {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .login-modal-lower-text {
   display: flex;
+  font-size: 16px;
 }
 
 .switch-between-modals {

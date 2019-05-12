@@ -36,9 +36,8 @@ class Spots extends React.Component {
     return (
       <div className="spots-and-map-div">
         <div id="outer-spots-div" className="outer-spots-div">
-          <h2 id="spots-list-header">
-            Explore all {this.props.spots.length} homes
-          </h2>
+          {(this.props.spots.length) ? <h2 id="spots-list-header"> Explore all {this.props.spots.length}+ homes </h2> : 
+            <div className="no-results"><h3> No results </h3><p>To get more results, try adjusting your search by changing your dates</p></div>}
           <div id="spots-list-container">
             <ul id="spots-results-list" className="spots-results-list">
               {this.props.spots.map(spot => (

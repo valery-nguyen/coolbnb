@@ -39,7 +39,7 @@ class NavBar extends React.Component {
     return (
       <div className="nav-bar">
         <div className="nav-bar-left">
-          <h1 onClick={this.linkToMainPage}>&#198;</h1>
+          <h1 onClick={this.linkToMainPage}>CoolBnb</h1>
           <AutoCompleteContainer />
         </div>
         {this.getMenuOptions()}

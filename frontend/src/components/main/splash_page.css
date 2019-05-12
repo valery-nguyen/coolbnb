@@ -1,9 +1,10 @@
 .splash-page {
-  height: 100vh;
+  height: calc(100vh - 42px);
   width: 100vw;
   overflow: hidden;
   box-sizing: border-box;
-
+  display: flex;
+  justify-content: center;
 }
 
 .splash-page-img {
@@ -11,19 +12,46 @@
   width: 100vw;
   background-repeat: no-repeat;
   background-position: top left; 
-  background-image: url('bg.jpg');
   background-size: cover;
   overflow: hidden;
   box-sizing: border-box;
+  transition: 0.8s;
+}
+
+.bg1 {
+  background-image: url('bg1.jpg');
+}
+
+.bg2 {
+  background-image: url('bg2.jpg');
 }
 
 .splash-page-title {
   top: 100px;
   left: 50px;
-  font-size: 60px;
+  font-size: 30px;
   position: fixed;
-  z-index: 0;
-  color: white;
-  min-width: 700px;
-  font-style: italic;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  word-wrap: break-word;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.splash-page-description {
+  margin-top: calc(50vh);
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  word-wrap: break-word;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
 }

@@ -13,9 +13,10 @@ export const SpotIndexItem = ({spot, mapIsActive}) => {
 
         <div className="spot-list-deets">
           <div className="spot-list-deets-desc">
+            <p className="spot-list-description-m-details">Entire guesthouse</p>
             <p className="spot-list-description-m">{spot.name}</p>
+            <p className="spot-list-description-m-details">Wifi | Free parking on premises | Kitchen | Hair dryer</p>
           </div>
-          
           <div className="spot-list-deets-price">
             <p className="spot-list-price-m">${spot.price}/night</p>
           </div>

@@ -1,3 +1,15 @@
+#reserve-form {
+  margin-top: 10px;
+}
+
+#start-date-field, #end-date-field {
+  font-size: 14px;
+}
+
+.DateInput {
+  width: 120px;
+}
+
 .reserve-main{
   display: flex;
   align-items: center;
@@ -7,6 +19,7 @@
   z-index: 0;
   box-sizing: border-box;
 }
+
 #reserve-inner-container{
   display: flex;
     justify-content: flex-start;
@@ -37,15 +50,15 @@
 }
 #reservation-submit-button{
   width: 100%;
-    height: 40px;
-    background: rgb(255, 90, 95);
-    border: 0;
-    font-weight: 600;
-    font-size: 15px;
-    color: white;
-    border-radius: 3px;
-    text-align: center;
-    margin-bottom: 10px;
+  height: 40px;
+  background: rgb(255, 90, 95);
+  border: 0;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 #reservation-submit-button:hover{
   cursor: pointer;
@@ -53,20 +66,22 @@
 
 .divider{
   border-bottom: 1px solid rgb(225, 225, 225);
-    height: 10px;
-    width: 100%;
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+  height: 10px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #messages-success{
- height: auto;
-  color: rgb(94, 148, 8);
+  height: auto;
+  color: #3cba54;
   font-weight: 600;
   font-size: 17px;
   font-family: sans-serif;
+  padding-top: 10px;
 }
 #messages-errors{
   height: auto;
   color: red;
+  padding-top: 10px;
 }

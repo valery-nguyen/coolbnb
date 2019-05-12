@@ -1,5 +1,6 @@
 import React from 'react';
 import './profile.css';
+import Footer from '../footer/footer';
 import { Link } from "react-router-dom";
 
 class Profile extends React.Component {
@@ -84,9 +85,12 @@ class Profile extends React.Component {
         );
       })
     return (
-      <div className="profile">
-        {(this.props.bookings.length > 0) ? <h2>Your Trips</h2> : <h2>You have no trip at this time!</h2>}
-        <ul>{bookingsLis}</ul>
+      <div>
+        <div className="profile">
+          <h2>Upcoming plans</h2>
+          {(this.props.bookings.length > 0) ? <ul>{bookingsLis}</ul> : <h3>You have no upcoming trips. Start exploring ideas for your next trip.</h3>}
+        </div>
+        <Footer />
       </div>
     );
   }

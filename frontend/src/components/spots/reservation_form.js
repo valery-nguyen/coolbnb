@@ -133,7 +133,7 @@ class ReservationForm extends React.Component {
                   className="reserve-guests"
                   onChange={this.update("guest_count")}
                   type="text"
-                  placeholder="enter number of guests"
+                  placeholder="Enter number of guests"
                 />
               </label>
               <input

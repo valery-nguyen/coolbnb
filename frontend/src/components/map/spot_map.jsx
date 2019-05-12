@@ -1,4 +1,3 @@
-import './spot_map.css';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import MarkerManager from './../../util/marker_manager';

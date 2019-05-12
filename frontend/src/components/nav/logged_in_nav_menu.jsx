@@ -20,7 +20,7 @@ class LoggedInNavMenu extends React.Component {
   render() {
     return (
       <div className="nav-menu-buttons">
-        <button className="nav-menu-button" onClick={this.linkToProfile}>My Trips</button>
+        <button className="nav-menu-button" onClick={this.linkToProfile}>Trips</button>
         <button className="nav-menu-button" onClick={this.logoutUser}>Logout</button>
       </div>
     );
