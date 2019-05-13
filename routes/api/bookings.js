@@ -34,15 +34,18 @@ router.get('/:spot_id', (req, res) => {
 });
 
 router.post('/create', (req, res) => {
+  const start_date = (req.body.startDate) ? new Date(req.body.startDate).setHours(23, 59, 0, 0) : null;
+  const end_date = (req.body.endDate) ? new Date(req.body.endDate).setHours(0, 0, 0, 0) : null;
+
   let newBooking = new Booking({
     user_id: req.body.user_id,
     spot_id: req.body.spot_id,
     guest_count: parseInt(req.body.guest_count),
-    start_date: new Date(req.body.startDate).setHours(23, 59, 0, 0),
-    end_date: new Date(req.body.endDate).setHours(0, 0, 0, 0),
+    start_date,
+    end_date,
     created_at: new Date()
   });
- 
+
   Booking.find({
     spot_id: newBooking.spot_id,
     start_date: { $lt: newBooking.end_date },

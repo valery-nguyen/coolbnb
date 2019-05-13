@@ -76,7 +76,7 @@
   height: auto;
   color: #3cba54;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
   font-family: sans-serif;
   padding-top: 10px;
 }
@@ -84,4 +84,5 @@
   height: auto;
   color: red;
   padding-top: 10px;
+  font-size: 12px;
 }

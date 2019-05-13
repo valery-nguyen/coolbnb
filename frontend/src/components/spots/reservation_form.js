@@ -32,7 +32,7 @@ class ReservationForm extends React.Component {
       this.setState({
         response_messages: [
           <div key="success" id="messages-success">
-            Successfully Booked!
+            Your trip was booked successfully!
           </div>
         ]
       });
@@ -40,7 +40,7 @@ class ReservationForm extends React.Component {
       this.setState({
         response_messages: [
           <div key="errors" id="messages-errors">
-            {messages.body}
+            {(messages.body) ? "Please verify your trip dates and guests count.." : null}
           </div>
         ]
       });
