@@ -52,10 +52,10 @@
   width: 500px;
   height: auto;
   padding: 35px 30px;
-  top: 50%;
-  left: 50%;
-  margin-left: -250px;
-  margin-top: -250px;
+  top: calc(50vh - 235px);
+  left: calc(50vw - 250px);
+  /* margin-left: -250px; */
+  /* margin-top: -250px; */
   z-index: 2;
 }
 

@@ -133,3 +133,12 @@
   font-size: 14px;
 }
 
+@media all and (max-width: 700px) {
+  .options-wrapper {
+    padding-left: 10px;
+  }
+
+  #spots-list-header {
+    padding-left: 30px !important;
+  }
+}
