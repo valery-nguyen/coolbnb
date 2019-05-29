@@ -26,7 +26,7 @@ Check out the [wiki] for development details!
 
 ## Acknowledgments
 
-* The starter group project can be found [here](https://aetherbnb-app.herokuapp.com) ([repository](https://github.com/valery-nguyen/AetherBnb)), which was developed in collaboration with 
+* The starter group project can be found [here](https://aetherbnb.herokuapp.com) ([repository](https://github.com/valery-nguyen/AetherBnb)), which was developed in collaboration with 
 Shannon Piesinger, Colin Reitman, and Trevor Steer.
 
 [//]: # (reference links are listed below)
