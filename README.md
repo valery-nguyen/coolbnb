@@ -91,7 +91,7 @@ Spot.find({
 
 * Redesign of the marker manager to store and display markers located within map boundaries provided by Google Maps JavaScript API, as well as seamlessly update the markers as the map is moved.
 
-Creating markers:
+**Creating markers**:
 
 ```js
 // frontend/src/util/marker_manager.js
@@ -125,7 +125,7 @@ const marker = new google.maps.Marker({
 this.markers[marker.spotId] = marker;
 ```
 
-Updating markers:
+**Updating markers**:
 ```js
 // frontend/src/util/marker_manager.js
 
@@ -144,7 +144,7 @@ updateMarkers(spots) {
 ```
 
 
-Removing markers:
+**Removing markers**:
 ```js
  // frontend/src/util/marker_manager.js
 
