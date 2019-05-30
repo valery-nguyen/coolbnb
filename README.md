@@ -2,6 +2,8 @@
 
 CoolBnb, an Airbnb.com clone, is an application giving users the possibility to search and book lodging, filtered by location, dates, type, and price.
 
+![screenshot](https://user-images.githubusercontent.com/13773733/58668588-5c6a7080-8307-11e9-92ca-e40c50a52c93.jpg)
+
 ## Getting Started
 
 Check out the [wiki] for development details!
