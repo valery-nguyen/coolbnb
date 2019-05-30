@@ -94,64 +94,64 @@ Spot.find({
 Creating markers:
 
 ```js
-    // frontend/src/util/marker_manager.js
+// frontend/src/util/marker_manager.js
 
-    export default class MarkerManager {
-      constructor(map) {
-        this.markers = {};
-        ...
-      }
+export default class MarkerManager {
+  constructor(map) {
+    this.markers = {};
+    ...
+  }
 
-      ...
-    }
+  ...
+}
 ```
 
 ```js
-    // frontend/src/util/marker_manager.js
+// frontend/src/util/marker_manager.js
 
-    const marker = new google.maps.Marker({
-      position,
-      map: this.map,
-      label: {
-        text: `$${spot.price}`,
-        fontSize: "9px",
-        fontWeight: "bold",
-        color: 'white'
-      },
-      spotId: spot._id
-    });
+const marker = new google.maps.Marker({
+  position,
+  map: this.map,
+  label: {
+    text: `$${spot.price}`,
+    fontSize: "9px",
+    fontWeight: "bold",
+    color: 'white'
+  },
+  spotId: spot._id
+});
 
-    // store in the MarkerManager instance
-    this.markers[marker.spotId] = marker;
+// store in the MarkerManager instance
+this.markers[marker.spotId] = marker;
 ```
 
 Updating markers:
 ```js
-    // frontend/src/util/marker_manager.js
+// frontend/src/util/marker_manager.js
 
-    updateMarkers(spots) {
-      const spotsObj = {};
-      spots.forEach(spot => spotsObj[spot._id] = spot);
+updateMarkers(spots) {
+  const spotsObj = {};
+  spots.forEach(spot => spotsObj[spot._id] = spot);
 
-      Object.keys(this.markers)
-        .filter(spotId => !spotsObj[spotId])
-        .forEach((spotId) => this.removeMarker(this.markers[spotId]));
+  Object.keys(this.markers)
+    .filter(spotId => !spotsObj[spotId])
+    .forEach((spotId) => this.removeMarker(this.markers[spotId]));
 
-      spots
-        .filter(spot => !this.markers[spot._id])
-        .forEach(newSpot => this.createMarkerFromSpot(newSpot));
-    }
+  spots
+    .filter(spot => !this.markers[spot._id])
+    .forEach(newSpot => this.createMarkerFromSpot(newSpot));
+}
 ```
 
 
 Removing markers:
 ```js
-     // frontend/src/util/marker_manager.js
+ // frontend/src/util/marker_manager.js
 
-    removeMarker(marker) {
-      this.markers[marker.spotId].setMap(null);
-      delete this.markers[marker.spotId];
-    }
+removeMarker(marker) {
+  this.markers[marker.spotId].setMap(null);
+  delete this.markers[marker.spotId];
+}
 ```
 
 
