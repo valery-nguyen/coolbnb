@@ -1,6 +1,4 @@
-## [CoolBnb is LIVE!]
-
-# Project Title
+# [CoolBnb]
 
 CoolBnb, an Airbnb.com clone, is an application giving users the possibility to search and book lodging, filtered by location, dates, type, and price.
 
@@ -8,9 +6,35 @@ CoolBnb, an Airbnb.com clone, is an application giving users the possibility to 
 
 Check out the [wiki] for development details!
 
+## Installation
+
+```
+git clone https://github.com/valery-nguyen/coolbnb.git
+cd coolbnb
+npm install
+cd frontend
+npm install
+```
+
+## Run
+
+* Set up the mongoURI and secretOrKey
+```
+// config/keys_dev.js
+
+module.exports = {
+  mongoURI: 'mongodb+srv://...',
+  secretOrKey: '...',
+};
+```
+* Start the server and client concurrently
+```
+npm run dev
+```
+
 ## Deployment
 
-* [Hosted on Heroku](https://www.heroku.com/)
+* Hosted on [Heroku](https://www.heroku.com/)
 
 ## Built With
 
@@ -30,5 +54,5 @@ Check out the [wiki] for development details!
 Shannon Piesinger, Colin Reitman, and Trevor Steer.
 
 [//]: # (reference links are listed below)
-[CoolBnb is LIVE!]: <https://coolbnb.herokuapp.com/>
+[CoolBnb]: <https://coolbnb.herokuapp.com/>
 [wiki]: <https://github.com/valery-nguyen/coolbnb/wiki/>
