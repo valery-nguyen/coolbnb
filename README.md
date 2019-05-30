@@ -19,6 +19,7 @@ npm install
 ## Run
 
 * Set up the mongoURI and secretOrKey
+
 ```
 // config/keys_dev.js
 
@@ -27,7 +28,9 @@ module.exports = {
   secretOrKey: '...',
 };
 ```
+
 * Start the server and client concurrently
+
 ```
 npm run dev
 ```
