@@ -42,10 +42,10 @@ npm run dev
 ## Built With
 
 * [MongoDB](https://www.mongodb.com/)
-* [Express](https://expressjs.com/)
-* [React](https://reactjs.org)
-* [Redux](https://redux.js.org)
-* [Node](https://nodejs.org/)
+* [Express.js](https://expressjs.com/)
+* [React.js](https://reactjs.org)
+* [Redux.js](https://redux.js.org)
+* [Node.js](https://nodejs.org/)
 
 ## Authors
 
