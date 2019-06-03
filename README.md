@@ -4,6 +4,18 @@ CoolBnb, an Airbnb.com clone, is an application giving users the possibility to 
 
 ![screenshot](https://user-images.githubusercontent.com/13773733/58668588-5c6a7080-8307-11e9-92ca-e40c50a52c93.jpg)
 
+## Built With
+
+* [MongoDB](https://www.mongodb.com/)
+* [Express.js](https://expressjs.com/)
+* [React.js](https://reactjs.org)
+* [Redux.js](https://redux.js.org)
+* [Node.js](https://nodejs.org/)
+
+## Deployment
+
+* Hosted on [Heroku](https://www.heroku.com/)
+
 ## Getting Started
 
 Check out the [wiki] for development details!
@@ -36,18 +48,6 @@ module.exports = {
 ```
 npm run dev
 ```
-
-## Deployment
-
-* Hosted on [Heroku](https://www.heroku.com/)
-
-## Built With
-
-* [MongoDB](https://www.mongodb.com/)
-* [Express.js](https://expressjs.com/)
-* [React.js](https://reactjs.org)
-* [Redux.js](https://redux.js.org)
-* [Node.js](https://nodejs.org/)
 
 ## Technical Implementation Details
 
