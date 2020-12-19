@@ -4,6 +4,10 @@
   "description": "CoolBnb is a smaller clone of AirBnb. It is implementing Google Maps API and was developed on the MERN Stack",
   "main": "app.js",
   "repository": "https://github.com/valery-nguyen/coolbnb",
+  "engines": {
+    "node": "15.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
